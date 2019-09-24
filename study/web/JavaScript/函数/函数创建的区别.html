@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 不能执行 -->
+    <!-- <script>
+       a();
+    </script> -->
+    <script>
+      a();
+      var a = function(){
+         alert(1);
+      }
+      b();//b is not a function
+      var b = function(){
+         alert(1);
+      }
+    </script>
+    <!-- 可以执行 -->
+    <!-- <script>
+        a();
+    </script> -->
+</body>
+</html>

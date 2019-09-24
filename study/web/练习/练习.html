@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" id="d" value="">
+    <script>
+      var d =document.getElementById('d');
+      var nw = confirm('女王请点确定');
+    //   console.log(nw);
+      
+    //   nw ==true?d.oninput = function(){
+    //       d.value == '2019-03-08'?alert('您可获得全场五折优惠'):alert('您无优惠');
+    //   }: alert('您无优惠');
+       d.oninput = function(){
+           d.value == '2019-03-08' && nw?alert('您可获得全场五折优惠'):alert('您无优惠');
+       }
+    </script>
+</body>
+</html>

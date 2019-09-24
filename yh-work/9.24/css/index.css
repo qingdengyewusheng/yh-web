@@ -1,0 +1,134 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.heard_top{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(63,81,181);
+    text-align: center;
+}
+.heard_top img{
+	width: 120px;
+	height: 120px;
+	margin-top: 30px;
+}
+.heard_top p{
+	font-size: 14px;
+	color: white;
+	margin-top: 10px;
+}
+.heard_buttom{
+	width: 100%;
+	height: 45px;
+	background-color:#3a4ba7;
+	text-align: center;
+}
+.heard_buttom p{
+	margin: 0 auto;
+}
+.heard_buttom a{
+	font-size:14px;
+	font-weight: 400;
+	font-family: arial;
+	color: #FFFFFF;
+	opacity: 0.8;
+	text-decoration: none;
+	line-height: 42px;
+	padding: 0 80px;
+}
+.motif{
+	width:100%;
+	height: auto;
+	background-color:#fefefe ;
+	margin-top: 30px;
+}
+.theme{
+	width:890px;	
+	height: auto;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 
+	 0 1px 10px 0 rgba(0,0,0,.12),
+	 0 2px 4px -1px rgba(0,0,0,.2);
+	margin: 0 auto;
+}
+.theme h1{
+	font-size: 24px;
+	font-weight: 400;
+    line-height: normal;
+    overflow: hidden;
+    padding: 0 20px;
+    padding-top: 10px;
+    /*margin-left: 50px;*/
+}
+.txt{
+	width: 684px;
+	min-height: 580px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.txt h3{
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+}
+.txt p{
+	font-size: 14px;
+    letter-spacing: 0;
+    margin: 0 13px 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(0,0,0,.54);
+    display: block;
+    width: 410px;
+    height: auto;
+}
+.txt_img{
+	position: relative;
+}
+.txt_img i{
+	display: inline-block;
+	width: 170px;
+	height: 52px;
+	background-color:rgba(0, 0, 0, 0.3);
+	line-height: 52px;
+	padding-left: 20px;
+	font-style: normal;
+	color: #fff;
+}
+.txt_img img{
+	width: 190px;
+	height: 200px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.txt_img i.i1{
+	position: absolute;
+	top: 204px;
+	left: 20px;
+}
+.txt_img i.i2{
+	position: absolute;
+	top: 204px;
+	right: 239px;
+}
+.tail{
+	width: 100%;
+	height: 100px;
+	background-color:#424242 ;
+	margin-top: 50px;
+	text-align: center;
+	line-height: 100px;
+}
+.tail p{
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.tail p i{
+	font-style: normal;
+	margin-left: 20px;
+}
+.tail p i a{
+	color:#9e9e9e;
+	text-decoration: none;
+	font-size: 14px;
+}

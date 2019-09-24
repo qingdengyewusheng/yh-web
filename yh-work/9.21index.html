@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a = prompt('请输入您的银行卡号');
+			var b = prompt('请输入您的密码');
+			var c = 10000;
+			if((a==123456789) && ( b==123456)){
+                alert('登录成功，卡内余额为'+c);
+                var  d = Number(prompt('请输入取款金额'));
+             if(d<=c){
+				alert ('卡内余额'+(c-d));
+			}else{
+				alert('卡内金额不足');
+			}
+            }else{
+                alert('账号或密码不正确，请确认后再次输入');
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+	  <input type="text" id="in1" value="" >
+	  +
+      <input type="text" id="in2" value="" >
+      <button id="btn">点击计算</button>
+      <div id="show" ></div>.
+      <script type="text/javascript">
+      	var in1 = document.getElementById('in1');
+      	var in2 = document.getElementById('in2');
+      	var btn = document.getElementById('btn');
+      	var show = document.getElementById('show');
+      	btn.onclick =function(){
+      		var a = in1.value;
+      		var b = in2.value;
+      		if (isNaN(a&&b)) {
+           	  alert("您输入的不是数字，请输入数字")
+           } else{
+               console.log(parseInt(a)+parseInt(b));
+               show.innerHTML = parseInt(a)+parseInt(b);
+           }
+      	}
+      </script>
+	</body>
+</html>

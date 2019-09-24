@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="scv">随意了</h1>
+    <script>
+        var scv = document.getElementById('scv');
+        console.log(scv);
+
+        //方法一:
+        //那些标签是加粗的h1~h6,b,strong
+        //H1 || H2 || H3 || H4 || B || STRONG
+        if(scv.tagName == 'H1' || scv.tagName == 'H2' || scv.tagName == 'H3' || scv.tagName == 'H4' || scv.tagName == 'B' || scv.tagName == 'STRONG'){
+            scv.style.fontWeight = 200;
+        }
+
+        //方法二:
+        //不管是不是粗体,统一变为细体
+        scv.style.fontWeight = 200;
+
+        //方法三:
+        var arr = ['H1','H2','H3','H4','H5','H6','B','STRONG'];
+        //console.log(arr.indexOf('DIV'))
+        //检测数组里是否有粗体的标签名,返回-1以为都是粗体
+        var isTrue = arr.indexOf(scv.tagName);
+        console.log(isTrue);
+        //判断如果是粗体标签名,就改变样式
+        if(isTrue != -1){
+           scv.style.fontWeight = 200;
+           scv.style.color = 'red';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+      #circle{
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background: red;
+      }
+      #an{
+          width: 50px;
+          height: 20px;
+      }
+    </style>
+</head>
+<body>
+    <!-- 200*200红色圆圈，下面再写一个按钮 -->
+    <div id="circle">
+
+    </div>
+    <button id="an"></button>
+    <script>
+     var circle=document.getElementById('circle');
+     var an=document.getElementById('an');
+     an.onclick=function(){
+         circle.style.background='blue';
+     }
+    </script>
+    </body>
+</html>
