@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="hh"></h1> -->
+
+    <!-- <p id="po"></p> -->
+
+    <ul id="dd">
+
+    </ul>
+    <script>
+        //用一个变量承接在文档中''创建'的一个元素
+        // var div =  document.createElement('div');
+        //将已经创建的元素放在想放的位置
+        // document.body.appendChild(div);
+
+
+        // var hh =document.getElementById('hh');
+        // var a = document.createElement('a');
+        // a.setAttribute('href','#')
+        // hh.appendChild(a);
+
+        // var po = document.getElementById('po');
+        // var span = document.createElement('span');
+        // document.body.appendChild(po);
+
+        var dd = document.getElementById('dd');
+        for(var i=0;i<10;i++){
+            var li = document.createElement('li');
+            dd.appendChild(li);
+        }
+    </script>
+</body>
+</html>
