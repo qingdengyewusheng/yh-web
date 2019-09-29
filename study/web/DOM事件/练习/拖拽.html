@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            position: relative;
+        }
+        #mydiv{
+            width: 100px;
+            height: 100px;
+            background-color:red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+        var mydiv=document.getElementById('mydiv');
+        //鼠标按下
+        mydiv.onmousedown =function(e){
+            var ev =e||window.event;
+            var xcha = ev.clientX-mydiv.offsetLeft;
+            var ycha = ev.clientX-mydiv.offsetTop;
+            //鼠标移动
+            document.onmousemove=function(e){
+                var ev =e||window.event;
+                mydiv.style.left =ev.clientX-xcha  +'px';
+                mydiv.style.top=ev.clientY-ycha +'px';
+            }
+            //鼠标抬起div不跟着移动
+            document.onmouseup=function(){
+                document.onmousemove = null;
+                document.onmouseup = null;
+            }
+        }
+    </script>
+</body>
+</html>
