@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 将两个字符利用字符串对象的方法变成一个字符,显示在页面id为h1的元素中 -->
+    <div id="h1"></div>
+    <script>
+        var a = '你好';
+        var b = '世界';
+        var c  = a.concat(b); 
+        document.getElementById('h1').innerHTML = c;
+    </script>
+</body>
+</html>
