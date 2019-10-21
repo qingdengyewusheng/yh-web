@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 一张图片是一个相对路径img/head/,icon/1.jpg,我只需要拿到它的文件夹目录后显示在页面id为h4的元素中 -->
+    <img src="img/head/icon/1.jpg" alt="" id="ig">
+    <div id="h4"></div>
+    <script>
+        var ig = document.getElementById('ig');
+        document.getElementById('h4').innerHTML = ig.getAttribute('src');
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 一个富豪想存87万,给理财顾问写了87w,请自动生成存储870000的方法,显示在页面id为h2的元素中 -->
+    <div id="h2"></div>
+    <script>
+        var a = '87';
+        var str = a.padEnd(6,'0');
+        document.getElementById('h2').innerHTML = str;
+    </script>
+</body>
+</html>
