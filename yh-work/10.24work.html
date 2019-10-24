@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="int">
+    <button id="btn1">签到</button>
+    <button id="btn2">未签到</button>
+    <script>
+		var ine = document.getElementById('int');
+		var btn1 = document.getElementById('btn1');
+		var btn2 = document.getElementById('btn2');
+       	var a = '徐牧刘青付超依婷艾米吴辉姚生';
+		var b = [];
+		var non = [];
+		btn1.onclick = function() {
+			b.push(ine.value);
+			ine.value = "";
+		}
+		btn2.onclick = function() {
+			var c = new RegExp(b.join('、'),"g");
+			var d =a.replace(c,"");
+			document.body.innerHTML = '未签到的人有:' +d;
+		}
+    </script>
+</body>
+</html>
